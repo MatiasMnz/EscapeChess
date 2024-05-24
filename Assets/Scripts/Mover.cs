@@ -8,7 +8,7 @@ public class Mover : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PrintPractice();
+
     }
 
     // Update is called once per frame
@@ -16,12 +16,6 @@ public class Mover : MonoBehaviour
     {
         Movement();
     }
-
-    void PrintPractice()
-    {
-        Debug.Log("Practice");
-    }
-
     void Movement()
     {
         float XValue = Input.GetAxis("Horizontal") * Time.deltaTime * Speed;
